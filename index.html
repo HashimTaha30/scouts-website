@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الموقع الكشفي</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Amiri&family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css">
+    <style>
+        body {
+            font-family: 'Tajawal', sans-serif;
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+            direction: rtl;
+            background: linear-gradient(to bottom, #f4f8ff, #dce6ff);
+            color: #00247d;
+        }
+
+        header {
+            background: url('https://example.com/header-background.jpg') center/cover no-repeat;
+            color: #f4f8ff;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .logo {
+            max-width: 120px;
+            display: block;
+            margin: 0 auto 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            background: #3366cc;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            color: #f4f8ff;
+            text-decoration: none;
+            padding: 10px 20px;
+            display: block;
+            border-radius: 5px;
+            transition: background 0.3s ease, transform 0.2s ease;
+        }
+
+        nav ul li a:hover {
+            background: #224a8d;
+            transform: scale(1.1);
+        }
+
+        main {
+            padding: 30px;
+        }
+
+        section {
+            margin-bottom: 30px;
+            background: #00247d;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            color: #f4f8ff;
+        }
+
+        section h2 {
+            color: #dce6ff;
+            margin-bottom: 15px;
+            font-family: 'Amiri', serif;
+        }
+
+        .btn {
+            background-color: #3366cc;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #224a8d;
+            transform: scale(1.1);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #00247d;
+            color: #f4f8ff;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .highlight {
+            background-color: #224a8d;
+            color: #f4f8ff;
+            padding: 2px 6px;
+            border-radius: 3px;
+        }
+
+        .callout {
+            background: #224a8d;
+            padding: 10px;
+            border-left: 5px solid #00247d;
+            margin-top: 20px;
+            border-radius: 5px;
+            color: #f4f8ff;
+        }
+
+        .callout h3 {
+            margin: 0;
+            color: #f4f8ff;
+        }
+
+        ul, ol {
+            margin-left: 20px;
+        }
+
+        img {
+            display: block;
+            max-width: 100%;
+            margin: 20px auto;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .gallery {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .gallery img {
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            max-width: 200px;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+
+        .card {
+            background: #224a8d;
+            color: #f4f8ff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 15px;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li {
+                margin: 5px 0;
+            }
+
+            main {
+                padding: 15px;
+            }
+
+            section {
+                padding: 15px;
+            }
+
+            .logo {
+                max-width: 100px;
+            }
+
+            footer {
+                font-size: 14px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header {
+                font-size: 14px;
+                padding: 15px;
+            }
+
+            nav ul li a {
+                padding: 8px 15px;
+            }
+
+            section h2 {
+                font-size: 18px;
+            }
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            console.log("Welcome to the enhanced Scout website!");
+            AOS.init();
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <img src="C:\Users\leent\OneDrive\Desktop\the game\khaled scouts logo.jpg" alt="شعار الكشافة" class="logo">
+        <h1>الموقع الكشفي</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#promise"><i class="fas fa-star"></i> الوعد الكشفي</a></li>
+            <li><a href="#law"><i class="fas fa-gavel"></i> القانون الكشفي</a></li>
+            <li><a href="#method"><i class="fas fa-campground"></i> الطريقة الكشفية</a></li>
+            <li><a href="#structure"><i class="fas fa-users"></i> هيكلية المنظمة الكشفية</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="promise" data-aos="fade-up">
+            <h2>الوعد الكشفي</h2>
+            <p>الوعد الكشفي هو <span class="highlight">تعهد</span> يلتزم به الكشاف بتطبيق قيم ومبادئ الكشافة في حياته اليومية. يهدف الوعد إلى غرس الأخلاق الحميدة والتفاني في خدمة المجتمع.</p>
+            <img src="C:\Users\leent\OneDrive\Desktop\the game\Screenshot 2024-12-11 222309.png" alt="وعد الكشافة">
+            <div class="callout">
+                <h3>معلومة إضافية</h3>
+                <p>الوعد الكشفي يساعد الكشاف على الالتزام بالمسؤولية والعمل الجماعي وتطوير ذاته بشكل مستمر.</p>
+            </div>
+        </section>
+        <section id="law" data-aos="fade-up">
+            <h2>القانون الكشفي</h2>
+            <p>القانون الكشفي يتكون من <span class="highlight">عشرة مبادئ</span> تهدف إلى غرس القيم والأخلاق الحميدة في نفوس الكشافين، وتشمل:</p>
+            <img src="C:\Users\leent\OneDrive\Desktop\the game\Screenshot 2024-12-11 222329.png" alt="القانون الكشفي">
+            <div class="callout">
+                <h3>توسع إضافي</h3>
+                <p>القانون الكشفي يساعد في بناء شخصية متوازنة ومحترمة تسعى للتميز وخدمة الآخرين.</p>
+            </div>
+        </section>
+        <section id="method" data-aos="fade-up">
+            <h2>الطريقة الكشفية</h2>
+            <p>الطريقة الكشفية هي نظام متكامل من الأنشطة <span class="highlight">التفاعلية</span> والتطبيقات العملية التي تهدف إلى تنمية الشخصية والقدرات القيادية لدى الشباب.</p>
+            <div class="callout">
+                <h3>أهمية الطريقة الكشفية</h3>
+                <p>تساعد الطريقة الكشفية في بناء الثقة بالنفس وتعزيز روح التعاون والعمل بروح الفريق.</p>
+            </div>
+            <p>تشمل الطريقة الكشفية برامج تدريبية ومخيمات تعليمية توفر فرصًا للكشافين لتعلم مهارات جديدة مثل الإسعافات الأولية، الملاحة، وحل المشكلات.</p>
+            <ul>
+                <li>تعلم مهارات البقاء على قيد الحياة.</li>
+                <li>تنظيم الفعاليات الخيرية.</li>
+                <li>تعزيز مهارات القيادة.</li>
+            </ul>
+        </section>
+        <section id="structure" data-aos="fade-up">
+            <h2>هيكلية المنظمة الكشفية</h2>
+            <p>تتكون المنظمة الكشفية من هيكل إداري يضمن التنظيم والتوجيه السليم للحركة الكشفية. وتشمل الهيكلية:</p>
+            <ol>
+                <li>مجلس القيادة - المسؤول عن اتخاذ القرارات الاستراتيجية.</li>
+                <li>فرق الكشافة - حيث يجتمع الأعضاء لتعلم المهارات والمشاركة في الأنشطة.</li>
+                <li>مجموعات الدعم - توفر الموارد والمساندة للفرق والمشاريع.</li>
+            </ol>
+            <p>الهيكلية تضمن أن كل عضو لديه دور واضح وأن الأنشطة تنظم بكفاءة لتحقيق أهداف الكشافة.</p>
+            <div class="callout">
+                <h3>رؤية مستقبلية</h3>
+                <p>الهيكلية تسعى لتطوير المزيد من البرامج التربوية والتعليمية التي تستهدف جميع الفئات العمرية.</p>
+            </div>
+        </section>
+  
+        <section id="contact" data-aos="fade-up">
+    <h2 style="color: black;">اتصل بنا</h2>
+    <form style="background: #f4f8ff; padding: 20px; border-radius: 5px; max-width: 400px; margin: auto; color: black;">
+        <label for="name" style="color: black;">الاسم:</label>
+        <input type="text" id="name" name="name" required style="width: 100%; margin: 5px 0; padding: 10px; border-radius: 5px; border: 1px solid #00247d;">
+
+        <label for="message" style="color: black;">رسالة:</label>
+        <textarea id="message" name="message" rows="4" required style="width: 100%; margin: 5px 0; padding: 10px; border-radius: 5px; border: 1px solid #00247d;"></textarea>
+
+        <button type="submit" class="btn" style="background-color: #00247d; color: white; margin-top: 10px;">إرسال</button>
+    </form>
+</section>
+
